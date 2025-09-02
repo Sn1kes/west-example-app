@@ -1,0 +1,21 @@
+manifest:
+  defaults:
+    remote: downstream
+
+  remotes:
+    - name: downstream
+      url-base: https://github.com/Sn1kes
+
+  projects:
+    - name: example-module
+      revision: main
+      repo-path: west-example-module
+      path: example-module
+    - name: zephyr-fork
+      revision: main
+      repo-path: zephyr
+      path: zephyr
+
+  self:
+    path: example-app
+    west-commands: scripts/west-commands.yml
