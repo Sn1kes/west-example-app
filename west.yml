@@ -15,6 +15,7 @@ manifest:
       revision: main
       repo-path: zephyr
       path: zephyr
+      import: false
 
   self:
     path: example-app
